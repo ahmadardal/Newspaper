@@ -46,6 +46,7 @@
 		DD3701332ADE6F8A0057F099 /* Newspaper_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Newspaper_AppUITests.swift; sourceTree = "<group>"; };
 		DD3701352ADE6F8A0057F099 /* Newspaper_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Newspaper_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DD3701452ADE7EBA0057F099 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DD37014B2ADE87ED0057F099 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +217,7 @@
 			knownRegions = (
 				en,
 				Base,
+				sv,
 			);
 			mainGroup = DD37010C2ADE6F890057F099;
 			productRefGroup = DD3701162ADE6F890057F099 /* Products */;
@@ -303,6 +305,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				DD3701452ADE7EBA0057F099 /* en */,
+				DD37014B2ADE87ED0057F099 /* sv */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
