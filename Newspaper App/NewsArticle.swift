@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct NewsArticle {
+struct NewsArticle: Identifiable {
+    var id = UUID()
     var title: String
     var content: String
     var date: Date
