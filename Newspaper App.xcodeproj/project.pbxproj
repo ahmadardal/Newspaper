@@ -16,6 +16,7 @@
 		DD3701342ADE6F8A0057F099 /* Newspaper_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3701332ADE6F8A0057F099 /* Newspaper_AppUITests.swift */; };
 		DD3701362ADE6F8A0057F099 /* Newspaper_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3701352ADE6F8A0057F099 /* Newspaper_AppUITestsLaunchTests.swift */; };
 		DD3701442ADE7EBA0057F099 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD3701462ADE7EBA0057F099 /* Localizable.strings */; };
+		DD37014D2ADE8BF10057F099 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD37014C2ADE8BF10057F099 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		DD3701352ADE6F8A0057F099 /* Newspaper_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Newspaper_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DD3701452ADE7EBA0057F099 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DD37014B2ADE87ED0057F099 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DD37014C2ADE8BF10057F099 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +106,7 @@
 				DD37011C2ADE6F8A0057F099 /* Assets.xcassets */,
 				DD37011E2ADE6F8A0057F099 /* Preview Content */,
 				DD3701462ADE7EBA0057F099 /* Localizable.strings */,
-				71D9C2642ADE8CAE000279B4 /* NewsArticle.swift */,
+				DD37014C2ADE8BF10057F099 /* DetailView.swift */,
 			);
 			path = "Newspaper App";
 			sourceTree = "<group>";
@@ -267,7 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD37011B2ADE6F890057F099 /* ContentView.swift in Sources */,
-				71D9C2652ADE8CAE000279B4 /* NewsArticle.swift in Sources */,
+				DD37014D2ADE8BF10057F099 /* DetailView.swift in Sources */,
 				DD3701192ADE6F890057F099 /* Newspaper_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
