@@ -12,11 +12,14 @@ struct ContentView: View {
     var body: some View {
         GeometryReader { geometry in
             VStack(alignment: .center) {
-                Text("Dagens nyheter").bold().font(.title)
-                
+                Text("today-news").bold().font(.title)
                 
                 CardComponentView().frame(width: geometry.size.width * 0.9, height: geometry.size.height * 0.25, alignment: .center).background(.black).cornerRadius(9)
                 
+                Button(action: {
+                }, label: {
+                    Text("To English")
+                })
             }
             .position(x: geometry.size.width * 0.5, y: geometry.size.height * 0.2)
         }

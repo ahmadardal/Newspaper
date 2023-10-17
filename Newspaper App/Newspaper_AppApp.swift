@@ -15,3 +15,4 @@ struct Newspaper_AppApp: App {
         }
     }
 }
+
