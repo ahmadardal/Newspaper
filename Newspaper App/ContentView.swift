@@ -11,17 +11,15 @@ struct ContentView: View {
     
     var body: some View {
         GeometryReader { geometry in
-            VStack(alignment: .center) {
-                Text("today-news").bold().font(.title)
-                
-                CardComponentView().frame(width: geometry.size.width * 0.9, height: geometry.size.height * 0.25, alignment: .center).background(.black).cornerRadius(9)
-                
-                Button(action: {
-                }, label: {
-                    Text("To English")
-                })
+            NavigationStack {
+                VStack(alignment: .center) {
+                    Text("today-news").bold().font(.title)
+                    
+                    CardComponentView().frame(width: geometry.size.width * 0.9, height: geometry.size.height * 0.25, alignment: .center).background(.black).cornerRadius(9)
+
+                }
+                .position(x: geometry.size.width * 0.5, y: geometry.size.height * 0.2)
             }
-            .position(x: geometry.size.width * 0.5, y: geometry.size.height * 0.2)
         }
     }
 }
@@ -32,19 +30,26 @@ struct CardComponentView: View {
     
     var body: some View {
         
-        AsyncImage(url: URL(string: "https://www.svtstatic.se/image/wide/992/41404046/1697528910"), content: { image in
-            
-            image.resizable().overlay(content: {
+        
+        NavigationLink(destination: DetailView(), label: {
+            AsyncImage(url: URL(string: "https://www.svtstatic.se/image/wide/992/41404046/1697528910"), content: { image in
                 
-                VStack {
-                    Text("Attentat i Bryssel").bold().font(.title).foregroundColor(.white)
-                }
+                image.resizable().overlay(content: {
+                    
+                    
+
+                    VStack {
+                        Text("Attentat i Bryssel").bold().font(.title).foregroundColor(.white)
+                    }
+                    
+                })
                 
+            }, placeholder: {
+                Text("Loading...").foregroundColor(.white).bold()
             })
-            
-        }, placeholder: {
-            Text("Loading...").foregroundColor(.white).bold()
         })
+        
+
         
         
     }
