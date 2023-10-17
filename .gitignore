@@ -90,3 +90,5 @@ fastlane/test_output
 iOSInjectionProject/
 
 .DS_STORE
+project.pbxproj
+*/project.pbxproj
